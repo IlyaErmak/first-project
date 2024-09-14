@@ -1,0 +1,254 @@
+*{
+    margin: 0 0 0 0;
+    background-color: white;
+    font-family: Raleway;
+}
+
+  .logo-black {
+    display: block;
+    margin-left: 593px;
+    margin-top:113px;
+    width: 12.5%;
+    height: 12.5%;
+  }
+  .menu{
+    font-size: 22px;
+    margin-top: -75px;
+    margin-left: 22px;
+    text-decoration: none;
+    list-style: circle;
+  }
+
+  .menu-list{
+    display:flex;
+    color:black;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .menu-list-item{
+    list-style: circle;
+    color:black;
+    flex-basis:100px;
+    padding-left:40px;
+    text-decoration: underline;
+  }
+.cover{
+  background-image: url(images/cover.jpg);
+  background-size:contain;
+  background-position: center;
+  margin-top:120px;
+  width:1354px;
+  height: 931px;
+
+}
+.maintext{
+  font-size: 122px;
+  text-transform: uppercase;
+  background: none;
+  color: white;
+  margin-left: 65px;
+  padding-top: 202px;
+  letter-spacing: 40px;
+}
+.mainp{
+  font-size: 27px;
+  padding-top:191px;
+  padding-left: 98px;
+  background:none;
+  color:white;
+  text-transform: uppercase;
+  word-spacing: 25px;
+}
+.adres{
+  
+
+  font-style: normal;
+  font-size: 23px;
+  line-height: 30px;
+  margin-top: -73px;
+  margin-left: 996px;
+  margin-right: 90px;
+  text-decoration: none;
+
+}
+.adres-list{
+  color:black;
+  text-decoration: none;
+}
+.lot{
+  font-style: normal;
+  font-size: 33px;
+  color:black;
+  text-transform: uppercase;
+  margin: 221px 0 0 80px ;
+}
+.lots{
+  display:flex;
+  margin:auto;
+  font-style: normal;
+  color:white;
+  text-transform: uppercase;
+
+}
+.lot-item{
+  font-style: normal;
+  font-size: 25px;
+  color:black;
+  text-transform: lowercase;
+  margin-left: -2px;
+}
+.lot-first{
+  background-image: url(images/card-lot-01.jpg);
+  background-position: center;
+  background-color: black;
+  background-size:168%;
+  margin-top: 32px;
+  margin-right: 32px;
+  margin-left: -50px;
+  margin-bottom: 29px;
+  width: 410px;
+  height: 693px;
+  top: 74px;
+}
+
+.lot-second{
+  background-image: url(images/card-lot-02.jpg);
+  background-position: center;
+  background-size:160%;
+  margin-top: 32px;
+  margin-right: 32px;
+  width: 410px;
+  height: 693px;
+  top: 74px;
+  left: 359px;
+  gap: 0px;
+  opacity: 0px;
+}
+.lot-third{
+  background-image: url(images/card-lot-03.jpg);
+  background-position: center;
+  background-size:160%;
+  margin-top: 32px;
+  width: 410px;
+  height: 693px;
+  top: 74px;
+  left: 718px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.lot-first-text{
+  color: white;
+  background: none;
+  font-style: normal;
+  font-size: 28px;
+  font-weight: bold; 
+
+}
+.lot-second-text{
+  color: white;
+  background: none;
+  font-style: normal;
+  font-size: 28px;
+  font-weight: bold; 
+
+}
+.lot-third-text{
+  color: white;
+  background: none;
+  font-style: normal;
+  font-size: 28px;
+  font-weight: bold; 
+
+}
+.about{
+  display: grid;
+}
+.about-list{
+  font-weight: bold;
+  font-size: 41px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-transform: uppercase;
+  margin-left: 89px;
+  margin-top: -168px;
+
+
+}
+.about-list-item{
+  grid-column: 2/3;
+  grid-row: 3/3;
+  font-size: 25px;
+  margin-left: 88px;
+  margin-top: 12px;
+  margin-right: 24px;;
+}
+.logo-white{
+  background:none;
+  width: 62%;
+  padding-left: 55px;
+  padding-top: 80px;
+}
+.circle{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width:295px;
+  height:295px;
+  background-color: black;
+  border-radius: 50%;
+  margin-left:88px;
+  margin-top:220px;
+
+}
+
+.foter{
+  font-size: 22px;
+  margin-top: 225px;
+  margin-left: 62px;
+  line-height: 28px;
+  color:black;
+}
+
+.adress-footer{
+  color:black;
+  text-align: start;
+  margin-right: 1000px;
+}
+.menu-footer{
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  margin-left: -100px;
+  margin-top: -115px;
+  margin-bottom: 155px;
+}
+.menu-footer-list{
+  color:black;
+  text-decoration: none;
+}
+.menu-footer-item{
+  color: black;
+}
+
+.social{
+  display: grid;
+  width: 23%;
+  margin-top: -237px;
+  margin-left: 935px;
+  margin-bottom: 155px;
+}
+
+.yt{
+  grid-row: 1/4;
+
+}
+.vk{
+  grid-row: 2/4;
+  padding-left: 60px;
+  padding-right:60px;
+}
+.pinterest{
+  grid-row: 3/4;
+
+}
