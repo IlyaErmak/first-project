@@ -14,9 +14,9 @@
   .menu{
     font-size: 22px;
     margin-top: -75px;
-    margin-left: 22px;
+    margin-left: 12px;
     text-decoration: none;
-    list-style: circle;
+    list-style: none;
   }
 
   .menu-list{
@@ -24,57 +24,111 @@
     color:black;
     text-decoration: none;
     list-style: none;
+    margin-left:5px;
   }
-
+  
   .menu-list-item{
     list-style: circle;
+    text-decoration: none;
     color:black;
     flex-basis:100px;
     padding-left:40px;
     text-decoration: underline;
+    list-style-type: circle;
   }
-.cover{
-  background-image: url(images/cover.jpg);
-  background-size:contain;
-  background-position: center;
-  margin-top:120px;
-  width:1354px;
-  height: 931px;
+  .cover {
+    position: relative;
+    width: 1354px;
+    height: 931px;
+    margin-top: 120px;
+  }
+  
+  .cover-img {
+    background-image: url(images/cover.jpg);
+    background-position: center;
+    background-size: 125%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+  }
+  
+  .cover-background {
+    background-color: rgba(0, 0, 0, 0.6); 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .covertext{
+    padding-top:203px;
+    font-size: 122px;
+    margin-left:62px;
+    background: none;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 40px;
+  }
+  .covertext-list{
+    background: none;
+    color:white;
+    display: block;
+    padding-top: 10px;
+    margin-left:352px;
+  }
+  .covertext-list-item{
+    background: none;
+    color:white;
+    display: block;
+    padding-top: 8px;
+    margin-left:719px;
+  
+  }
+  .coverparagraph {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    background: none;
+    padding-left: 98px;
+    padding-top: 164px;
+}
 
+.paragraph {
+    background: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 27px;
+    word-spacing: 25px;
+    margin-top:-5px;
 }
-.maintext{
-  font-size: 122px;
-  text-transform: uppercase;
-  background: none;
-  color: white;
-  margin-left: 65px;
-  padding-top: 202px;
-  letter-spacing: 40px;
+
+.knopka {
+    font-size: 27px;
+    background: none;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid white; 
+    padding: 15px 40px;
+    margin-left:65px;
+    margin-top: -9px;
 }
-.mainp{
-  font-size: 27px;
-  padding-top:191px;
-  padding-left: 98px;
-  background:none;
-  color:white;
-  text-transform: uppercase;
-  word-spacing: 25px;
-}
-.adres{
+
   
 
+.adres{
   font-style: normal;
   font-size: 23px;
   line-height: 30px;
-  margin-top: -73px;
-  margin-left: 996px;
+  margin-top: -74px;
+  margin-left: 998px;
   margin-right: 90px;
   text-decoration: none;
 
 }
 .adres-list{
   color:black;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .lot{
   font-style: normal;
@@ -83,96 +137,170 @@
   text-transform: uppercase;
   margin: 221px 0 0 80px ;
 }
+
+
 .lots{
   display:flex;
-  margin:auto;
-  font-style: normal;
-  color:white;
-  text-transform: uppercase;
+}
 
+.lot-first {
+  position: relative;
+  width: 411px;
+  height: 693px;
+  
 }
-.lot-item{
-  font-style: normal;
-  font-size: 25px;
-  color:black;
-  text-transform: lowercase;
-  margin-left: -2px;
-}
-.lot-first{
+
+.lot-first-img {
   background-image: url(images/card-lot-01.jpg);
   background-position: center;
-  background-color: black;
-  background-size:168%;
-  margin-top: 32px;
-  margin-right: 32px;
-  margin-left: -50px;
-  margin-bottom: 29px;
-  width: 410px;
-  height: 693px;
-  top: 74px;
+  background-size: 161%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  margin-top:33px;
+  margin-left:-49px
 }
 
-.lot-second{
-  background-image: url(images/card-lot-02.jpg);
-  background-position: center;
-  background-size:160%;
-  margin-top: 32px;
-  margin-right: 32px;
-  width: 410px;
-  height: 693px;
-  top: 74px;
-  left: 359px;
-  gap: 0px;
-  opacity: 0px;
-}
-.lot-third{
-  background-image: url(images/card-lot-03.jpg);
-  background-position: center;
-  background-size:160%;
-  margin-top: 32px;
-  width: 410px;
-  height: 693px;
-  top: 74px;
-  left: 718px;
-  gap: 0px;
-  opacity: 0px;
+.lot-first-black {
+  background-color: rgba(0, 0, 0, 0.6); 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
 }
 
 .lot-first-text{
-  color: white;
   background: none;
-  font-style: normal;
-  font-size: 28px;
-  font-weight: bold; 
+  color:white;
+  font-size:27px;
+  margin-top: 64px;
+  margin-left:50px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.lot-first-par{
+  background: none;
+  text-transform: none;
+  color:white;
+  font-size:25px;
+  margin-left: 46px;
+  margin-top:296px;
+  margin-right:50px;
+}
 
+.lot-second {
+  position: relative;
+  width: 411px;
+  height: 693px;
+  
+}
+
+.lot-second-img {
+  background-image: url(images/card-lot-02.jpg);
+  background-position: center;
+  background-size: 161%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  margin-left:393px;
+  margin-top:33px;
+}
+
+.lot-second-black {
+  background-color: rgba(0, 0, 0, 0.6); 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
 }
 .lot-second-text{
-  color: white;
   background: none;
-  font-style: normal;
-  font-size: 28px;
-  font-weight: bold; 
+  color:white;
+  font-size:27px;
+  margin-top: 64px;
+  margin-left:50px;
+  margin-right:30px;
+  font-weight: bold;
+  text-decoration: underline;
+  line-height: 32px;
+}
+.lot-second-par{
+  background: none;
+  text-transform: none;
+  color:white;
+  font-size:25px;
+  margin-left: 46px;
+  margin-right:50px;
+}
+.lot-third {
+  position: relative;
+  width: 411px;
+  height: 693px;
+  
+}
 
+.lot-third-img {
+  background-image: url(images/card-lot-03.jpg);
+  background-position: center;
+  background-size: 161%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  margin-left:835px;
+  margin-top:33px;
+}
+
+.lot-third-black {
+  background-color: rgba(0, 0, 0, 0.6); 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
 }
 .lot-third-text{
-  color: white;
   background: none;
-  font-style: normal;
-  font-size: 28px;
-  font-weight: bold; 
-
+  color:white;
+  font-size:27px;
+  margin-top: 64px;
+  margin-left:50px;
+  margin-right:30px;
+  font-weight: bold;
+  text-decoration: underline;
+  line-height: 32px;
 }
+.lot-third-par{
+  background: none;
+  text-transform: none;
+  color:white;
+  font-size:25px;
+  margin-left: 46px;
+  margin-top:117px;
+  margin-right:50px;
+}
+.lot-link{
+  background:none;
+  position:absolute;
+  padding-top:70px;
+  font-size: 25px;
+  color:black;
+  text-transform: lowercase;
+}
+
 .about{
   display: grid;
+  margin-top:100px;
 }
 .about-list{
   font-weight: bold;
-  font-size: 41px;
+  font-size: 42px;
   grid-column: 2/3;
   grid-row: 2/3;
   text-transform: uppercase;
   margin-left: 89px;
-  margin-top: -168px;
+  margin-top: -169px;
 
 
 }
@@ -182,7 +310,7 @@
   font-size: 25px;
   margin-left: 88px;
   margin-top: 12px;
-  margin-right: 24px;;
+  margin-right: 20px;;
 }
 .logo-white{
   background:none;
@@ -204,8 +332,8 @@
 
 .foter{
   font-size: 22px;
-  margin-top: 225px;
-  margin-left: 62px;
+  margin-top: 224px;
+  margin-left: 6px;
   line-height: 28px;
   color:black;
 }
@@ -214,14 +342,17 @@
   color:black;
   text-align: start;
   margin-right: 1000px;
+  line-height: 30px;
+  margin-left: 57px;
 }
 .menu-footer{
   list-style: none;
   text-decoration: none;
   text-align: center;
-  margin-left: -100px;
-  margin-top: -115px;
+  margin-left: -45px;
+  margin-top: -120px;
   margin-bottom: 155px;
+  line-height: 26px;
 }
 .menu-footer-list{
   color:black;
@@ -233,9 +364,9 @@
 
 .social{
   display: grid;
-  width: 23%;
-  margin-top: -237px;
-  margin-left: 935px;
+  width: 22%;
+  margin-top: -234px;
+  margin-left: 990px;
   margin-bottom: 155px;
 }
 
@@ -245,8 +376,8 @@
 }
 .vk{
   grid-row: 2/4;
-  padding-left: 60px;
-  padding-right:60px;
+  padding-left: 59px;
+  padding-right:59px;
 }
 .pinterest{
   grid-row: 3/4;
